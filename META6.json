@@ -1,0 +1,19 @@
+{
+  "name": "Intl::Format::Unit",
+  "description": "Write me!",
+  "version": "0.1.0",
+  "perl": "6.*",
+  "authors": [
+    "Matthew Stephen Stuckwisch"
+  ],
+  "auth": "git:alabamenhu",
+  "depends": ["Intl::CLDR", "Intl::UserLanguage", "Intl::Format::Number", "Intl::Number::Plural"],
+  "build-depends": [],
+  "test-depends": ["Test"],
+  "provides": {
+    "Intl::Format::Unit": "lib/Intl/Format/Unit.pm6"
+  },
+  "resources": [],
+  "license": "Artist-2.0",
+  "source-url": "git://github.com/alabamenhu/IntlFormatUnit.git"
+}
