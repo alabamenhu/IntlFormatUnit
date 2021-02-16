@@ -1,13 +1,18 @@
 {
   "name": "Intl::Format::Unit",
   "description": "Write me!",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "perl": "6.*",
   "authors": [
     "Matthew Stephen Stuckwisch"
   ],
   "auth": "git:alabamenhu",
-  "depends": ["Intl::CLDR:ver<0.5.1+>", "Intl::UserLanguage", "Intl::Format::Number", "Intl::Number::Plural"],
+  "depends": [
+    "Intl::CLDR:ver<0.5.2+>",
+    "Intl::UserLanguage",
+    "Intl::Format::Number",
+    "Intl::Number::Plural:ver<0.2.0+>"
+  ],
   "build-depends": [],
   "test-depends": ["Test"],
   "provides": {
