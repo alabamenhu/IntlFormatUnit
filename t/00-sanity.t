@@ -1,7 +1,5 @@
 use Intl::Format::Unit;
 use Test;
-
-say UnitGrammar.parse("meter-per-square-second");
-
+use Intl::CLDR;
 
 done-testing;
