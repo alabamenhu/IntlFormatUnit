@@ -122,8 +122,8 @@ class Fmt::Per does Fmt::Element {
             with lang.units.simple{$!right.orig};
 
         unless $fmt-string {
-            my $right-plural = lang.grammar.derivations.per.plural-first;
-            my $right-case   = lang.grammar.derivations.per.case-first;
+            my $right-plural = lang.grammar.derivations.per.plural-second;
+            my $right-case   = lang.grammar.derivations.per.case-second;
 
             $right-plural = count if $right-plural eq 'compound';
             $right-case   = case  if $right-case   eq 'compound';
@@ -175,8 +175,8 @@ class Fmt::Times does Fmt::Element {
 
         # Set up the RIGHT side (e.g. kilowatt-*hour*).
         # Unlike per, there are no built in styles.
-        my $right-plural = lang.grammar.derivations.per.plural-second;
-        my $right-case   = lang.grammar.derivations.per.case-second;
+        my $right-plural = lang.grammar.derivations.times.plural-second;
+        my $right-case   = lang.grammar.derivations.times.case-second;
         $right-plural = count if $right-plural eq 'compound';
         $right-case   = case  if $right-case   eq 'compound';
         my $right = $!right.format: lang, length, $right-case, $right-plural;

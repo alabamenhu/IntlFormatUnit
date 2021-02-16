@@ -1,5 +1,4 @@
-use Intl::Format::Unit;
 use Test;
-use Intl::CLDR;
+use Intl::Format::Unit;
 
 done-testing;
